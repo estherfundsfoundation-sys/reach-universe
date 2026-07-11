@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>REACH Staff Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="staff.css">
+  <link rel="stylesheet" href="universe-motion.css">
+</head>
+<body>
+  <div class="staff-shell">
+    <header class="staff-nav">
+      <a class="brand" href="index.html">r.e.a.c.h.<small>STAFF COMMAND CENTER</small></a>
+      <a href="portal.html">Member portal ↗</a>
+    </header>
+
+    <main>
+      <section class="staff-hero">
+        <div>
+          <span class="eyebrow">NATIONAL STAFF · PRIVATE ACCESS</span>
+          <h1>See the care<br>behind the <em>movement.</em></h1>
+          <p>Review requests, protect student stories, and respond to the moments when REACH matters most.</p>
+        </div>
+        <div class="auth-card" id="authPanel">
+          <span class="eyebrow">STAFF SIGN IN</span>
+          <h2>Enter securely.</h2>
+          <p id="authStatus">Only approved staff emails can enter this space.</p>
+          <input id="staffEmail" type="email" placeholder="Staff email address" autocomplete="email">
+          <input id="staffPassword" type="password" placeholder="Password" autocomplete="current-password">
+          <div class="actions"><button id="staffSignIn">Log in</button><button class="secondary" id="staffCreate">Create account</button></div>
+        </div>
+      </section>
+
+      <section class="dashboard hidden" id="staffDashboard">
+        <div class="dash-head"><div><span class="eyebrow">PRIVATE REVIEW SPACE</span><h2>Welcome back, staff.</h2></div><button class="secondary" id="staffSignOut">Sign out</button></div>
+        <p class="status" id="staffStatus"></p>
+        <div class="stats" id="staffStats"></div>
+
+        <section class="review-section">
+          <div class="section-title"><div><span class="eyebrow">01 / MEDIA REVIEW</span><h2>Photos waiting for care.</h2></div><button class="secondary refresh" data-load="media">Refresh</button></div>
+          <div class="review-grid" id="mediaQueue"></div>
+        </section>
+
+        <section class="review-section two-up">
+          <div class="panel"><div class="section-title"><div><span class="eyebrow">02 / BOX REQUESTS</span><h2>Students asking for support.</h2></div><button class="secondary refresh" data-load="boxes">Refresh</button></div><div id="boxQueue"></div></div>
+          <div class="panel"><div class="section-title"><div><span class="eyebrow">03 / AMBASSADORS</span><h2>Future campus leaders.</h2></div><button class="secondary refresh" data-load="ambassadors">Refresh</button></div><div id="ambassadorQueue"></div></div>
+        </section>
+
+        <section class="review-section">
+          <div class="section-title"><div><span class="eyebrow">04 / WALL MODERATION</span><h2>Keep the Wall safe and encouraging.</h2></div><button class="secondary refresh" data-load="wall">Refresh</button></div>
+          <div class="wall-grid" id="wallQueue"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="reach-config.js"></script>
+  <script src="staff.js"></script>
+</body>
+</html>
