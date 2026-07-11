@@ -3,6 +3,8 @@ html,body{max-width:100%;overflow-x:hidden}
 body{background:#070510!important}
 body:before{content:'';position:fixed;z-index:-1;inset:0;background:radial-gradient(circle at 14% 15%,#ff00c82c,transparent 25%),radial-gradient(circle at 86% 18%,#00e5ff27,transparent 27%),radial-gradient(circle at 50% 85%,#6f22cb25,transparent 36%),linear-gradient(155deg,#080713 0%,#15052d 49%,#070510 100%);pointer-events:none}
 .site-shell{position:relative;max-width:100%;overflow:clip;background:linear-gradient(145deg,#080713e9 15%,#140a2df2 52%,#080713ee)!important}
+.site-shell,.u-wrap{z-index:1}
+body>canvas{z-index:0!important}
 .site-shell:after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(90deg,transparent 0 49.7%,#00e5ff11 50%,transparent 50.3%),linear-gradient(#ff00c810 1px,transparent 1px);background-size:94px 94px;mask-image:linear-gradient(transparent 12%,#000 39%,transparent 93%);animation:reachDrift 14s linear infinite}
 .site-shell>*{position:relative;z-index:1}
 .site-shell img{max-width:100%;height:auto}
