@@ -1,1 +1,109 @@
-:root{--p:#753cff;--c:#00e5ff;--m:#ff00c8;--ink:#070510;--panel:#110929;--muted:#c4bcd0}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -12%,#7215b8 0,transparent 27%),radial-gradient(circle at 100% 58%,#008cff2b,transparent 24%),var(--ink);color:#fff;font-family:Poppins,Arial,sans-serif;min-height:100vh}.portal-wrap{width:min(1230px,calc(100% - 34px));margin:auto}.portal-nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid #c58cff38}.portal-brand{color:#fff;text-decoration:none;font-size:29px;font-weight:900;letter-spacing:-2px}.portal-brand small{display:block;font-size:7px;letter-spacing:1.4px;color:#e5d7ff;margin-left:3px}.portal-nav a:last-child{font-size:11px;background:var(--c);color:#070510;padding:10px 13px;border-radius:8px;text-decoration:none;font-weight:800}.portal-hero{display:grid;grid-template-columns:1fr .95fr;gap:34px;align-items:center;padding:78px 0 42px}.portal-hero h1{font-size:clamp(45px,6vw,78px);line-height:.92;letter-spacing:-4px;margin:13px 0 18px}.portal-hero h1 em{font-style:normal;text-shadow:0 0 25px #c67bff}.portal-hero p{color:var(--muted);line-height:1.8;font-size:13px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.8px;color:var(--c)}.auth-card,.dashboard,.portal-card{border:1px solid #bd82ff66;background:linear-gradient(145deg,#2b1059d9,#0a0d22e8);border-radius:18px;box-shadow:0 20px 55px #000a}.auth-card{padding:25px}.auth-card h2{margin:0 0 8px}.auth-card input,.profile-form input,.profile-form textarea,.post-form textarea,.chat-form input,.media-form input{width:100%;padding:11px;margin:7px 0;background:#070411;border:1px solid #ffffff2b;border-radius:8px;color:#fff;font:12px Poppins}.auth-card button,.portal-button{border:0;cursor:pointer;border-radius:8px;padding:11px 13px;background:linear-gradient(90deg,var(--c),#72f4ff);color:#06030d;font:800 11px Poppins;margin-top:7px}.auth-card .swap{display:block;margin-top:12px;color:#d9c7f0;background:none;border:0;padding:0;text-align:left;font:11px Poppins;cursor:pointer}.fine{font-size:10px;color:#b9aec8;line-height:1.6}.hidden{display:none!important}.dashboard{padding:24px;margin:46px 0 80px}.dash-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.dash-top h2{margin:0;font-size:27px}.portal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:22px}.portal-card{padding:19px;min-height:177px}.portal-card span{color:var(--c);font-size:10px;font-weight:800;letter-spacing:1px}.portal-card h3{font-size:20px;margin:16px 0 8px}.portal-card p{font-size:11px;color:var(--muted);line-height:1.65}.portal-card a{color:var(--c);font-size:11px;font-weight:800;text-decoration:none}.status{font-size:11px;margin:10px 0;color:#d7cceb}.status.bad{color:#ffb0eb}.wall{display:grid;grid-template-columns:1fr .8fr;gap:14px;margin:35px 0 85px}.wall-feed,.community-sidebar{border:1px solid #bd82ff55;background:#0c081dca;border-radius:16px;padding:20px}.post{padding:14px 0;border-bottom:1px solid #ffffff15}.post b{font-size:11px;color:var(--c)}.post p{font-size:12px;line-height:1.7;color:#ded7e9;margin:7px 0}.post small{font-size:9px;color:#aaa0b7}.row{display:flex;gap:8px}.row>*{flex:1}.directory{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:25px 0 80px}.member{border:1px solid #b987ff45;border-radius:13px;padding:18px;background:#110a26}.member b{font-size:17px}.member p{font-size:11px;color:var(--muted);line-height:1.65}.member span{font-size:9px;color:var(--c);font-weight:800}.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:25px 0 80px}.media-placeholder{min-height:160px;border:1px dashed #bd82ff7a;border-radius:13px;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;color:#b8adc7;font-size:11px;line-height:1.6}.portal-footer{border-top:1px solid #ffffff1b;padding:28px 0 40px;color:#a89bb5;font-size:10px}@media(max-width:780px){.portal-hero,.wall{grid-template-columns:1fr}.portal-grid,.directory,.media-grid{grid-template-columns:1fr 1fr}}@media(max-width:480px){.portal-grid,.directory,.media-grid{grid-template-columns:1fr}.portal-hero h1{letter-spacing:-2px}.portal-wrap{width:min(100% - 24px,1230px)}}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="REACH by Esther Funds Foundation — support before students have to drop out.">
+  <title>REACH | Esther Funds Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="characters.css">
+  <link rel="stylesheet" href="showcase.css">
+  <link rel="stylesheet" href="universe-motion.css">
+</head>
+<body>
+  <div class="site-shell">
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="noise"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="REACH home"><img src="assets/reach-logo.png" alt="r.e.a.c.h. by Esther Funds Foundation" onerror="this.style.display='none'"><span class="wordmark">r.e.a.c.h.<small>by esther funds foundation</small></span></a>
+      <nav aria-label="Main navigation"><a href="program.html">About REACH</a><a href="reach-box-request.html">Request a Box</a><a href="ambassador-apply.html">Become an Ambassador</a><a href="#pathways">Pathways</a><a href="portal.html">Member Portal</a></nav>
+      <a class="nav-cta" href="https://estherfundsfoundation.org/reach-action-hub" target="_blank" rel="noopener">Action Hub <span>↗</span></a>
+    </header>
+
+    <main id="home">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> THE STUDENT SUPPORT UNIVERSE</p>
+          <h1>Before you drop out,<br><em>R.E.A.C.H.</em></h1>
+          <p class="hero-text">Money. Meals. Mental health. A plan. A person who knows what to do next. REACH helps students find support before one hard week becomes a reason to leave.</p>
+          <div class="hero-actions"><a class="button primary" href="#reach-mode">Build my 72-hour plan <b>→</b></a><a class="button ghost" href="#pathways">Explore the 7 pathways</a></div>
+          <div class="trust-row"><span><b>R</b> Reach Out</span><span><b>E</b> Engage Community</span><span><b>A</b> Access Resources</span></div>
+        </div>
+        <div class="hero-console" aria-label="REACH student characters and command center preview">
+          <img class="hero-characters" src="assets/reach-characters.png" alt="REACH student characters in purple hoodies">
+          <div class="console-glow"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="mini-card signal"><span class="dot"></span> SUPPORT SIGNAL ACTIVE</div>
+          <div class="core"><span>R</span><small>YOUR NEXT STEP<br>IS HERE.</small></div>
+          <div class="mini-card status"><b>72 HRS</b><span>to stabilize your next move</span></div>
+          <div class="mini-card route"><span>✦</span><b>Resource route<br>ready to build</b></div>
+          <p class="console-label">REACH COMMAND CENTER <i>●</i> ONLINE</p>
+        </div>
+      </section>
+
+      <section class="character-showcase section-wrap">
+        <div class="character-copy"><p class="eyebrow"><i></i> MEET THE REACH COMMUNITY</p><h2>Real students.<br>Real pressure.<br><em>Real support.</em></h2><p>REACH is built for students navigating the moments that can make college feel impossible — and for the people who choose to help them keep going.</p><a class="button primary" href="command-center.html">Enter the Student Command Center <b>→</b></a></div>
+        <img src="assets/reach-characters.png" alt="REACH student characters in purple hoodies" class="character-poster">
+      </section>
+
+      <section class="walking-lane section-wrap" aria-label="Individual REACH student characters walking through the universe"><div class="walker one"></div><div class="walker two"></div><div class="walker three"></div></section>
+
+      <section class="mission-bar"><div><span class="pulse-dot"></span> YOU ARE NOT BEHIND. YOU NEED A ROUTE.</div><a href="https://estherfundsfoundation.org/" target="_blank" rel="noopener">Meet Esther Funds Foundation ↗</a></section>
+
+      <section class="inside-doors section-wrap">
+        <p class="eyebrow"><i></i> ENTER THE REACH UNIVERSE</p><h2>Not a page full of links.<br>Real places to begin.</h2>
+        <div class="door-grid">
+          <a href="command-center.html"><span>01</span><b>Student Command Center</b><small>Urgent routes, resource shelves, academic recovery, and semester support.</small><i>→</i></a>
+          <a href="academy.html"><span>02</span><b>REACH Academy</b><small>Multiweek training, decision stories, planning tools, reflection, and certificates.</small><i>→</i></a>
+          <a href="ambassador-hq.html"><span>03</span><b>Ambassador Headquarters</b><small>Campus tools, event builder, training, media vault, action plans, and impact.</small><i>→</i></a>
+          <a href="reach-boxes.html"><span>04</span><b>REACH Box Experience</b><small>Apply, prepare, share, and connect students to practical support.</small><i>→</i></a>
+          <a href="scholarship-studio.html"><span>05</span><b>Scholarship Studio</b><small>Build applications with story planning, recommendations, checklists, and real support.</small><i>→</i></a>
+          <a href="semester-simulator.html"><span>06</span><b>Semester Simulator</b><small>Notice money pressure points and build an earlier route around them.</small><i>→</i></a>
+          <a href="ecosystem.html"><span>07</span><b>REACH Ecosystem</b><small>See the Student, Ambassador, Chapter, and public-impact experience together.</small><i>→</i></a>
+        </div>
+      </section>
+
+      <section id="pathways" class="section-wrap pathways">
+        <div class="section-heading"><p class="eyebrow"><i></i> THE REACH UNIVERSE</p><h2>Seven ways to keep<br>going — together.</h2><p>Choose the path that matches what you need, who you want to help, or the change you want to make.</p></div>
+        <div class="path-grid">
+          <a class="path-card featured" href="https://estherfundsfoundation.org/reach-yourself" target="_blank" rel="noopener"><span class="path-num">01</span><span class="path-icon">✦</span><h3>Reach for<br>Yourself</h3><p>Scholarships, emergency aid, food, housing, hygiene, academic tools, and support before things fall apart.</p><b>Start with you <i>→</i></b></a>
+          <a class="path-card" href="https://estherfundsfoundation.org/reach-a-friend" target="_blank" rel="noopener"><span class="path-num">02</span><span class="path-icon">♡</span><h3>Reach for<br>a Friend</h3><p>Listen, encourage, connect, and follow up with scripts that help a friend take the next step.</p><b>Help a friend <i>→</i></b></a>
+          <a class="path-card" href="https://estherfundsfoundation.org/reach-your-campus-1" target="_blank" rel="noopener"><span class="path-num">03</span><span class="path-icon">⌁</span><h3>Reach Your<br>Campus</h3><p>Host workshops, scholarship search parties, resource drives, and campus events that matter.</p><b>Bring REACH to campus <i>→</i></b></a>
+          <a class="path-card" href="https://estherfundsfoundation.org/reach-your-community" target="_blank" rel="noopener"><span class="path-num">04</span><span class="path-icon">✋</span><h3>Reach Your<br>Community</h3><p>Lead pantry restocks, hygiene kits, care packages, youth mentoring, and career events.</p><b>Find a project <i>→</i></b></a>
+          <a class="path-card" href="https://estherfundsfoundation.org/beyond-your-campus" target="_blank" rel="noopener"><span class="path-num">05</span><span class="path-icon">↗</span><h3>Reach Beyond<br>Your Campus</h3><p>Start a chapter, become an ambassador, advocate for aid, and build real partnerships.</p><b>Create bigger change <i>→</i></b></a>
+          <a class="path-card" href="https://estherfundsfoundation.org/reach-k-12" target="_blank" rel="noopener"><span class="path-num">06</span><span class="path-icon">⌘</span><h3>Reach<br>K–12</h3><p>Mentor younger students, host readiness workshops, tutor, and make college feel possible.</p><b>Support K–12 <i>→</i></b></a>
+          <a class="path-card" href="https://estherfundsfoundation.org/reach-for-professionals" target="_blank" rel="noopener"><span class="path-num">07</span><span class="path-icon">◌</span><h3>Reach for<br>Professionals</h3><p>Mentor, sponsor, offer internships, host career events, or advise a local chapter.</p><b>Give back <i>→</i></b></a>
+        </div>
+      </section>
+
+      <section id="reach-mode" class="reach-mode section-wrap">
+        <div class="mode-copy"><p class="eyebrow"><i></i> REACH MODE</p><h2>When the pressure is real,<br>start here.</h2><p>Choose what is most urgent. We’ll give you a practical 72-hour starting route — no shame, no guessing.</p><p class="micro">This is a self-guided planning tool, not emergency or clinical care. If you are in immediate danger, call 911. For crisis support, call or text <strong>988</strong>.</p></div>
+        <div class="mode-panel">
+          <div class="step-label"><span>01</span> WHAT NEEDS YOUR ATTENTION FIRST?</div>
+          <div class="need-options" role="group" aria-label="Choose a need">
+            <button data-need="money">Tuition / money</button><button data-need="food">Food / housing</button><button data-need="school">I may fail or withdraw</button><button data-need="mind">I feel overwhelmed</button><button data-need="friend">I am worried about a friend</button><button data-need="ride">Transportation / childcare</button>
+          </div>
+          <div id="plan-output" class="plan-output" aria-live="polite"><div class="plan-empty"><span>✦</span><p>Pick a need to unlock your next three moves.</p></div></div>
+        </div>
+      </section>
+
+      <section id="workshops" class="section-wrap workshop-area">
+        <div class="section-heading compact"><p class="eyebrow"><i></i> READY-TO-RUN PROGRAMMING</p><h2>Bring REACH into<br>the room.</h2></div>
+        <div class="workshop-grid">
+          <article class="workshop-card"><div class="workshop-top"><span>WORKSHOP 01</span><b>FLAGSHIP</b></div><h3>REACH Workshop I</h3><p>Lead EFF’s flagship facilitated workshop with the full presentation and a facilitator kit built for your campus.</p><div class="workshop-actions"><a href="https://www.canva.com/design/DAHL1vZJQFY/EwLN-e-IT8q2vbgvTij9bg/view" target="_blank" rel="noopener">View presentation ↗</a><a href="https://drive.google.com/file/d/1d5SA4e7koSU-ONuviFrA6Fl1LEXknXix/view" target="_blank" rel="noopener">Download kit ↓</a></div></article>
+          <article class="workshop-card second"><div class="workshop-top"><span>WORKSHOP 02</span><b>SIGNATURE</b></div><h3>REACH Workshop II</h3><p>Go deeper with EFF’s second signature workshop — designed to create connection, resource awareness, and student action.</p><div class="workshop-actions"><a href="https://www.canva.com/design/DAHMMGLic4E/AXSegXsNVhrbhjY5zPU8wA/view" target="_blank" rel="noopener">View presentation ↗</a><a href="https://drive.google.com/file/d/1vP8Nv256d9FRCVsiH3GyKygHbP8rfS6t/view" target="_blank" rel="noopener">Download kit ↓</a></div></article>
+        </div>
+      </section>
+
+      <section id="ambassadors" class="ambassador section-wrap">
+        <div class="ambassador-window"><div class="window-top"><span></span><span></span><span></span><b>AMBASSADOR HEADQUARTERS / PREVIEW</b><i>● secure space coming online</i></div><div class="ambassador-body"><div><p class="eyebrow"><i></i> LEAD THE MOVEMENT</p><h2>For the students<br>who refuse to look away.</h2><p>Ambassadors get the structure to turn care into action: campus tools, event plans, training, service tracking, and a national sisterhood of student leaders.</p><div class="hq-list"><span>◈ Campus activation kits</span><span>◈ Ambassador training path</span><span>◈ Event builder & impact tools</span><span>◈ Leadership resource library</span></div><a class="button primary" href="https://estherfundsfoundation.org/beyond-your-campus" target="_blank" rel="noopener">Become an Ambassador <b>→</b></a></div><div class="hq-visual"><div class="hq-orbit"></div><div class="hq-center"><small>YOUR CAMPUS</small><b>REACH<br>READY</b></div><div class="hq-chip chip-one">EVENT KIT</div><div class="hq-chip chip-two">TRAINING</div><div class="hq-chip chip-three">IMPACT LOG</div></div></div></div>
+      </section>
+
+      <section class="section-wrap reachtape"><div class="tape-panel"><span class="tape-label">REACH IS NOT A MOMENT.</span><h2>It’s a way students<br>keep each other here.</h2><p>Built by Esther Funds Foundation for students, campuses, communities, and the people who believe support should arrive before a student gives up.</p><div class="tape-actions"><a class="button primary" href="https://estherfundsfoundation.org/reach-action-hub" target="_blank" rel="noopener">Open the Action Hub <b>→</b></a><a class="button ghost" href="https://www.instagram.com/effcampusreachbox/" target="_blank" rel="noopener">Follow @effcampusreachbox ↗</a></div></div></section>
+    </main>
+    <footer><a class="brand footer-brand" href="#home"><span class="wordmark">r.e.a.c.h.<small>by esther funds foundation</small></span></a><p>Every Future Fulfilled.</p><a href="https://estherfundsfoundation.org/" target="_blank" rel="noopener">estherfundsfoundation.org ↗</a></footer>
+  </div>
+  <script src="universe-space.js"></script><script src="app.js"></script>
+</body>
+</html>
